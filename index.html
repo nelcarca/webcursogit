@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Tienda de Mascotas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- /Navbar-->
+
+  <!-- Contenedor y Carousel -->
+  <div class="container mt-2">
+
+    <div class="col-sm-10 offset-sm-1 carousel slide carousel-fade" id="mi-carousel" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="1000">
+          <div class="carousel-caption">
+            <h5>Mascotas Favoritas</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium saepe non totam hic omnis mollitia delectus, dignissimos minus impedit perferendis est tempora? Magni porro voluptatibus culpa recusandae cupiditate optio.</p>
+          </div>
+          <img class="img-fluid" src="img/mascota5.jpeg" alt="gatito regalón">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-caption">
+            <h5>Perrito y su plato de agua</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium saepe non totam hic omnis mollitia delectus, dignissimos minus impedit perferendis est tempora? Magni porro voluptatibus culpa recusandae cupiditate optio.</p>
+          </div>
+          <img class="img-fluid" src="img/mascota6.jpg" alt="perrito y su plato de agua">
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-caption">
+            <h5>Gatito Atento</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium saepe non totam hic omnis mollitia delectus, dignissimos minus impedit perferendis est tempora? Magni porro voluptatibus culpa recusandae cupiditate optio.</p>
+          </div>
+          <img class="img-fluid" src="img/mascota7.jpg" alt="gatito atento">
+        </div>
+
+      </div>
+
+      <!-- Controladores-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#mi-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+        <!-- esto va quedar oculto, lo va poder leer sistemas de voz, para personas no videntes.-->
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#mi-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+        <!-- esto va quedar oculto, lo va poder leer sistemas de voz, para personas no videntes.-->
+      </button>
+      <!-- /Controladores -->
+      <!-- Indicadores-->
+        <div class="carousel-indicators">
+        <button 
+          type="button"
+          class="active" 
+          data-bs-target="#mi-carousel"
+          data-bs-slide-to="0"
+          aria-label="Slide 1"
+          >
+        </button>
+
+        <button 
+          type="button" 
+          data-bs-target="#mi-carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+          >
+        </button>
+
+        <button 
+          type="button" 
+          data-bs-target="#mi-carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+          >
+        </button>
+
+        <button 
+          type="button" 
+          data-bs-target="#mi-carousel"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        >
+      </button>
+
+        </div>
+      <!-- /Indicadores-->
+    </div>
+
+  </div>
+  <!-- /Contenedor y Carousel-->
+
+  
+  <!-- container que centra y container-fluid que abarca todo el ancho -->
+  <div class="container d-flex justify-content-around mt-5">
+    <!-- CARDS -->
+    <div class="card" style="width: 18rem;">
+      <img src="https://www.zooplus.es/magazine/wp-content/uploads/2018/04/fotolia_169457098.jpg" class="card-img-top"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mi Gatito</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Obtener Gatito</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://s5.favim.com/orig/54/cachorro-cao-cute-dog-Favim.com-520329.jpg" class="card-img-top"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mi Cachorro</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Obtener Gatito</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="http://3.bp.blogspot.com/-PCYWNmOfxVw/UAvYaoLmAAI/AAAAAAAAHQY/2Vt-DZX_Ax4/s1600/article-new_ds-photo_getty_article_84_168_AA032896_XS.jpg" class="card-img-top"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Perrito en el agua</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Obtener Gatito</a>
+      </div>
+    </div>
+    <!-- /CARDS-->
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
